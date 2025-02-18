@@ -1,0 +1,41 @@
+section { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #262E34;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+    .profile-image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-image: url("../../../../public/assets/img/default-background.svg"); 
+        background-size: auto; 
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: opacity 0.5s ease-in-out;
+    
+        &:hover {
+            background-image: url("../../../../public/assets/img/hover-background.svg");
+        }
+        .person {
+            position: relative;
+            z-index: 1;
+            height: 700px;
+            border-bottom-left-radius: 108%;
+            border-bottom-right-radius: 154%;
+            padding-bottom: 78px;
+           
+        }
+      
+    }
+
+   
+    
+}
