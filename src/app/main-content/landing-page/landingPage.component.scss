@@ -8,7 +8,19 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+    
+    h1{
+        font-family: 'Anta';
+        font-size: 88px;
+        font-weight: 400;
+    }
 
+    h2{
+        font-family: 'Josefin Sans';
+        font-size: 40px;
+        font-weight: 400;
+    }
+    
     .profile-image {
         position: relative;
         display: flex;
@@ -24,18 +36,48 @@ section {
         &:hover {
             background-image: url("../../../../public/assets/img/hover-background.svg");
         }
+
         .person {
             position: relative;
             z-index: 1;
             height: 700px;
             border-bottom-left-radius: 108%;
-            border-bottom-right-radius: 154%;
+            border-bottom-right-radius: 157%;
             padding-bottom: 78px;
-           
         }
-      
     }
 
-   
-    
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:66px;
+        height:73px;
+
+        .logo-default {
+            display: block; 
+        }
+
+        .logo-hover {
+            display: none; 
+        }
+
+        &:hover {
+            .logo-default {
+                display: none; 
+            }
+
+            .logo-hover {
+                display: block; 
+            }
+        }
+    }
 }
