@@ -1,0 +1,73 @@
+section {
+    background-color: #262E34;
+    font-family: 'Anta', sans-serif;
+    color: white;
+    padding: 100px 0;
+   
+}
+
+h1 {
+    color: #89BCD9;
+    font-size: 60px;
+    font-weight: 100;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.whyme-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 900px; 
+    margin: auto; 
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Increase spacing between icon and text */
+    font-size: 24px; /* Slightly larger text */
+    font-weight: bold;
+}
+
+.location img {
+    width: 50px; /* Increase icon size */
+    height: 50px;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); /* Soft shadow for depth */
+}
+
+.location div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.highlight {
+    color: #89BCD9; /* Blue color for "I am" */
+    font-weight: bold;
+}
+
+.txt-content {
+    max-width: 350px; /* Slightly wider for better alignment */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid #89BCD9;
+    background: none;
+    color: #89BCD9;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Pushes the button to the right */
+}
+
+
+

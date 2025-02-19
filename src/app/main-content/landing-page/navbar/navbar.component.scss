@@ -1,0 +1,23 @@
+.navbar-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #89BCD9;
+    height: 104px;
+    width:100%;
+}
+
+.navbar-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:80px;
+}
+
+.language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
