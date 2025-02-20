@@ -1,6 +1,6 @@
 section {
     background-color: #262E34;
-    font-family: 'Anta', sans-serif;
+    font-family: 'Josefin Sans';
     color: white;
 }
 
@@ -10,13 +10,15 @@ h1 {
     font-weight: 100;
     margin-bottom: 50px;
     text-align: center;
+    font-family: 'Anta', sans-serif;
+    
 }
 
 .skills-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 100px;
+ 
 }
 
 .skills-grid {
@@ -38,11 +40,11 @@ h1 {
 }
 
 .learning-container {
-    background-image: url('../../../../public/assets/img/my-skills-img/default-ellipse.svg'); /* Update path */
+    background-image: url('../../../../public/assets/img/my-skills-img/default-ellipse.svg'); 
     
     background-position: center;
     background-repeat: no-repeat;
-    width: 375px; 
+    width: 500px; 
     height:391px; 
 
     display: flex;
@@ -52,8 +54,14 @@ h1 {
     text-align: center;
    
 }
+
+.learning-container:hover{
+    background-image: url('../../../../public/assets/img/my-skills-img/hover-ellipse.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .learning-title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -63,12 +71,8 @@ h1 {
     margin: 10px 0;
 }
 
-.learning-icons img {
-    width: 50px;
-}
-
 .learning-text {
-    font-size: 14px;
+    font-size: 18px;
     color: #89BCD9;
-    width: 80%;
+    width: 56%;
 }
