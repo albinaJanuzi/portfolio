@@ -1,6 +1,6 @@
 section {
     background-color: #262E34;
-    font-family: 'Anta', sans-serif;
+    font-family: 'Josefin Sans';
     color: white;
     padding: 100px 0;
    
@@ -12,6 +12,7 @@ h1 {
     font-weight: 100;
     margin-bottom: 50px;
     text-align: center;
+    font-family: 'Anta';
 }
 
 .whyme-content {
@@ -53,21 +54,26 @@ h1 {
 }
 
 button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: 2px solid #89BCD9;
+    margin-top: 13px;
+    padding: 13px 30px;
+    border: 1px solid #89BCD9;
     background: none;
     color: #89BCD9;
     font-size: 18px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    border-radius: 30px;
 }
 
 .button-container {
     display: flex;
     justify-content: flex-end; /* Pushes the button to the right */
 }
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color:#89BCD9;
+}
+
 
 
 
