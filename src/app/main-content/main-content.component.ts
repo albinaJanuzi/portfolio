@@ -5,10 +5,11 @@ import { WhyMeComponent } from './why-me/why-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-main-content',
-  imports: [CommonModule, LandingPageComponent, WhyMeComponent, MySkillsComponent, MyProjectsComponent, FeedbackComponent],
+  imports: [CommonModule, LandingPageComponent, WhyMeComponent, MySkillsComponent, MyProjectsComponent, FeedbackComponent, ContactComponent],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })
