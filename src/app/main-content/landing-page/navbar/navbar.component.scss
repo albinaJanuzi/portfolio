@@ -8,19 +8,26 @@
     font-family: 'Josefin Sans';
 }
 
-.navbar-links{
+.navbar-links {
     display: flex;
     justify-content: center;
     align-items: center;
     gap:80px;
-  
-}
+    a {
+      text-decoration: none;
+      padding: 20px 20px;
+      color: #262E34;
+      font-size: 26px;
+      &.active {
+        background-image: url('../../../../../public/assets/img/active-link.svg');
+        background-repeat: no-repeat;
+        color: white;
+        background-position: center;
+      }
+    }
+  }
 
-a{
-    text-decoration: none;
-    font-size: 26px;
-    color:#262E34;
-}
+
 
 a:hover{
     color:white;

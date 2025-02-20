@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+
 @Component({
   selector: 'app-navbar',
   standalone: true,
@@ -9,5 +10,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  activeLink: string = '';
 
+  setActive(link: string) {
+    this.activeLink = link;
+  }
 }
