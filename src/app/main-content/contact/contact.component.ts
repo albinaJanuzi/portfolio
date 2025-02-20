@@ -7,5 +7,21 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+  checkboxState: 'default' | 'checked' | 'hover' = 'default';
 
+  toggleCheckbox() {
+    this.checkboxState = this.checkboxState === 'checked' ? 'default' : 'checked';
+  }
+
+  onHover() {
+    if (this.checkboxState !== 'checked') {
+      this.checkboxState = 'hover';
+    }
+  }
+
+  onLeave() {
+    if (this.checkboxState !== 'checked') {
+      this.checkboxState = 'default';
+    }
+  }
 }

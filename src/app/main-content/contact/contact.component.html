@@ -44,10 +44,14 @@
             <div class="text-area-title">
                 <p>Your Message</p>
             <textarea id="message"></textarea>
-            <div class="policy">
-                <img src="assets/img/contact/checkbox.svg" alt="">
+            <div class="policy" (click)="toggleCheckbox()" (mouseenter)="onHover()" (mouseleave)="onLeave()">
+                <img class="checkbox-default" src="assets/img/contact/checkbox.svg" alt="Default Checkbox" [style.display]="checkboxState === 'default' ? 'block' : 'none'">
+                <img class="checkbox-hover" src="assets/img/contact/hover-checkbox.svg" alt="Hover Checkbox" [style.display]="checkboxState === 'hover' ? 'block' : 'none'">
+                <img class="checkbox-checked" src="assets/img/contact/checked-checkbox.svg" alt="Checked Checkbox" [style.display]="checkboxState === 'checked' ? 'block' : 'none'">
+                
                 <label for="privacy-policy">I've read the <a href="#">privacy policy</a> and agree to the processing of my data as outlined.</label>
             </div>
+            
             <div class="button-position">
             <button type="submit">Send</button>
             </div>

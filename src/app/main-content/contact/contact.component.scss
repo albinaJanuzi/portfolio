@@ -138,8 +138,8 @@ textarea {
     display: flex;
     align-items: center;
     gap: 10px;
-}
 
+}
 .checkbox-container input {
     width: 16px;
     height: 16px;
@@ -153,7 +153,6 @@ button {
     color: #89BCD9;
     border-radius: 30px;
     cursor: pointer;
-    transition: 0.3s;
     opacity: 50%;
 }
 
@@ -170,9 +169,14 @@ a{
 
 }
 
-.policy{
-    font-size: 14px;
+.policy {
     display: flex;
     align-items: center;
     padding-left: 20px;
+    cursor: pointer; 
+
+    img {
+        width: 24px;
+        height: auto;
+    }
 }
