@@ -30,23 +30,23 @@
 
 
     <div class="contact-form">
-        <form #contactForm="ngForm" (ngSubmit)="onSubmit()" class="contact-form" novalidate>
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" class="contact-form" novalidate>
             <div class="input-group">
                 <div class="input-container">
-                    <p  [ngClass]="{'input-error-title': name.invalid && name.touched}" >Your Name</p>
+                    <p [ngClass]="{'input-error-title': name.invalid && (name.touched || isSubmitted)}">Your Name</p>
                     <input type="text" name="name" [(ngModel)]="formData.name" required #name="ngModel"
-                        [ngClass]="{'input-error': name.invalid && name.touched}">
+                    [ngClass]="{'input-error': (name.invalid && (name.touched || isSubmitted))}">
                 </div>
                 <div class="input-container">
-                    <p [ngClass]="{'input-error-title': email.invalid && email.touched}">Your Email</p>
+                    <p [ngClass]="{'input-error-title': email.invalid && (email.touched || isSubmitted)}">Your Email</p>
                     <input type="email" name="email" [(ngModel)]="formData.email" required #email="ngModel"
-                        [ngClass]="{'input-error': email.invalid && email.touched}">
+                    [ngClass]="{'input-error': (email.invalid && (email.touched || isSubmitted))}">
                 </div>
             </div>
             <div class="text-area-title">
-                <p [ngClass]="{'input-error-title': message.invalid && message.touched}">Your Message</p>
+                <p [ngClass]="{'input-error-title': message.invalid && (message.touched || isSubmitted)}">Your Message</p>
                 <textarea name="message" [(ngModel)]="formData.message" required #message="ngModel"
-                    [ngClass]="{'input-error': message.invalid && message.touched}"></textarea>
+  [ngClass]="{'input-error': (message.invalid && (message.touched || isSubmitted))}"></textarea>
                     
                     <div class="policy" (click)="toggleCheckbox()" (mouseenter)="onHover()" (mouseleave)="onLeave()">
                         <img class="checkbox-default" src="assets/img/contact/checkbox.svg" alt="Default Checkbox"
