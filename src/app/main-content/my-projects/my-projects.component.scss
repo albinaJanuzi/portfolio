@@ -14,6 +14,12 @@ h1 {
     text-align: center;
 }
 
+h3{
+    font-size:28px;
+    font-weight: 400;
+
+}
+
 nav {
     display: flex;
     justify-content: flex-start;
@@ -59,19 +65,93 @@ section {
         display: block; 
     }
 }
+.projekt-info-txt{
+    max-width:600px;
+    padding-left: 78px;
+   }
 
+   .projekt-info-txt p{
+    font-size:18px;
+    font-weight: 400;
+   }
 .projekt-info{
     display: flex;
     align-items: center;
     gap:50px;
 }
 
-.projekt-info-txt{
- max-width:600px;
- padding-left: 78px;
-}
+
 
 .info-content{
-    padding-left:136px;
+    padding-top:20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+}
+
+
+
+.info-content-container{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.technologies{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.projekt-bild p{
+text-align: center;
+}
+
+.button-position{
+    display: flex;
+    justify-content: center;
+    gap:10px;
     padding-top:20px;
 }
+
+.github-button{
+    background: transparent;
+    border: 2px solid #89BCD9;
+    padding: 13px 32px;
+    font-size: 16px;
+    color: #89BCD9;
+    border-radius: 30px;
+}
+
+.github-button:hover{
+    background-color: #3F464A;
+}
+
+.button-test{
+    background-color: #89BCD9;
+    border: none;
+    padding: 13px 32px;
+    font-size: 16px;
+    color: #262E34;
+    border-radius: 30px;
+}
+.button-test:hover{
+    background-color: #F8F5EC;
+}
+
+button{
+    font-family: 'Josefin Sans';
+    font-size:18px;
+    font-weight: 400;
+}
+
