@@ -8,6 +8,7 @@
     padding-bottom:150px;
 }
 
+
 h1 {
     color: #89BCD9;
     font-size: 60px;
@@ -127,6 +128,22 @@ textarea {
     font-size: 14px;
     outline: none;
 }
+
+.input-group input:focus,
+textarea:focus {
+    background-color: #323F48; // Ändert die Textfarbe, wenn der Nutzer tippt
+}
+
+.input-error{
+    border: 1px solid red !important;
+
+}
+
+.input-error-title{
+    color:red !important;
+
+}
+
 
 textarea {
     width:100%;

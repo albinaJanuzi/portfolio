@@ -5,13 +5,23 @@ section{
     background-size: cover;
     background-repeat: no-repeat;
 
-    .social-media{
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        flex-direction: column;
-    }
+   
 }
+
+.social-media {
+    position: absolute;
+    top: 100px;
+    right: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-media img:hover {
+    background-color: #3F464A;
+    border-radius:100%
+}
+
 .main-content { 
     display: flex;
     justify-content: center;

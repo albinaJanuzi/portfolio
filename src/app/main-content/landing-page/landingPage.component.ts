@@ -10,9 +10,5 @@ import { NavbarComponent } from './navbar/navbar.component';
   styleUrl: './landingPage.component.scss'
 })
 export class LandingPageComponent {
-  activeLink: string = '';
-
-  setActive(link: string) {
-    this.activeLink = link;
-  }
+ 
 }

@@ -1,7 +1,7 @@
 <section class="contact-section">
     <div class="title-img">
         <div>
-        <h1>Contact me</h1>
+            <h1>Contact me</h1>
         </div>
         <div class="arrow-up">
             <img src="assets/img/default-arrowDown.svg" alt="Arrow Up">
@@ -14,7 +14,7 @@
             value to their projects through your work.<br>
             Example: Feel free to get in touch with job offers or opportunities such as: ...
         </p>
-    
+
         <div class="contact-info">
             <div class="contact-item">
                 <img src="assets/img/contact/email-icon.svg" alt="Email Icon">
@@ -25,37 +25,48 @@
                 <p>Tel: 0157 123 456 68</p>
             </div>
         </div>
-       
+
     </div>
 
-    
+
     <div class="contact-form">
-        <form>
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit()" class="contact-form" novalidate>
             <div class="input-group">
                 <div class="input-container">
-                    <p>Your Name</p>
-                    <input type="text" id="name">
+                    <p  [ngClass]="{'input-error-title': name.invalid && name.touched}" >Your Name</p>
+                    <input type="text" name="name" [(ngModel)]="formData.name" required #name="ngModel"
+                        [ngClass]="{'input-error': name.invalid && name.touched}">
                 </div>
                 <div class="input-container">
-                    <p>Your Email</p>
-                    <input type="email" id="email">
+                    <p [ngClass]="{'input-error-title': email.invalid && email.touched}">Your Email</p>
+                    <input type="email" name="email" [(ngModel)]="formData.email" required #email="ngModel"
+                        [ngClass]="{'input-error': email.invalid && email.touched}">
                 </div>
             </div>
             <div class="text-area-title">
-                <p>Your Message</p>
-            <textarea id="message"></textarea>
-            <div class="policy" (click)="toggleCheckbox()" (mouseenter)="onHover()" (mouseleave)="onLeave()">
-                <img class="checkbox-default" src="assets/img/contact/checkbox.svg" alt="Default Checkbox" [style.display]="checkboxState === 'default' ? 'block' : 'none'">
-                <img class="checkbox-hover" src="assets/img/contact/hover-checkbox.svg" alt="Hover Checkbox" [style.display]="checkboxState === 'hover' ? 'block' : 'none'">
-                <img class="checkbox-checked" src="assets/img/contact/checked-checkbox.svg" alt="Checked Checkbox" [style.display]="checkboxState === 'checked' ? 'block' : 'none'">
-                
-                <label for="privacy-policy">I've read the <a href="#">privacy policy</a> and agree to the processing of my data as outlined.</label>
+                <p [ngClass]="{'input-error-title': message.invalid && message.touched}">Your Message</p>
+                <textarea name="message" [(ngModel)]="formData.message" required #message="ngModel"
+                    [ngClass]="{'input-error': message.invalid && message.touched}"></textarea>
+                    
+                    <div class="policy" (click)="toggleCheckbox()" (mouseenter)="onHover()" (mouseleave)="onLeave()">
+                        <img class="checkbox-default" src="assets/img/contact/checkbox.svg" alt="Default Checkbox"
+                             [style.display]="checkboxState === 'default' ? 'block' : 'none'">
+                        <img class="checkbox-hover" src="assets/img/contact/hover-checkbox.svg" alt="Hover Checkbox"
+                             [style.display]="checkboxState === 'hover' ? 'block' : 'none'">
+                        <img class="checkbox-checked" src="assets/img/contact/checked-checkbox.svg" alt="Checked Checkbox"
+                             [style.display]="checkboxState === 'checked' ? 'block' : 'none'">
+                        <img class="checkbox-error" src="assets/img/contact/checkbox-red.svg" alt="Error Checkbox"
+                             [style.display]="checkboxState === 'error' ? 'block' : 'none'"> <!-- Rotes Checkbox-Bild -->
+                        
+                        <label for="privacy-policy">I've read the <a href="#">privacy policy</a> and agree to the processing
+                          of my data as outlined.</label>
+                      </div>
+                      
+
+                <div class="button-position">
+                    <button type="submit">Send</button>
+                </div>
             </div>
-            
-            <div class="button-position">
-            <button type="submit">Send</button>
-            </div>
-        </div>
         </form>
     </div>
 </section>
