@@ -32,6 +32,10 @@ h1 {
     .arrow-up {
         display: flex;
         justify-content: flex-end;
+        img:hover{
+                background-color: #3F464A;
+                border-radius: 30px;
+        }
     }
 }
 
