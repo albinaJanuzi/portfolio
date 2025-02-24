@@ -3,9 +3,7 @@ section{
     width: 100%;
     background-color: #262E34;
     background-size: cover;
-    background-repeat: no-repeat;
-
-   
+    background-repeat: no-repeat; 
 }
 
 .social-media {
@@ -28,6 +26,7 @@ section{
     align-items: center;
     color: white;
     padding-top: 29px;
+    gap:30px;
     
     h1{
         font-family: 'Anta';
@@ -61,8 +60,7 @@ section{
             position: relative;
             z-index: 1;
             height: 700px;
-            border-bottom-left-radius: 108%;
-            border-bottom-right-radius: 157%;
+            border-radius: 100%;
             padding-bottom: 78px;
         }
     }
